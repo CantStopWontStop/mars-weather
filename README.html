@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="mars-weather" class="level1">
+<h1>mars-weather</h1>
+<section id="deliverable-1" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-1">Deliverable 1:</h2>
+<section id="scrape-titles-and-preview-text-from-mars-news-." class="level3">
+<h3 class="anchored" data-anchor-id="scrape-titles-and-preview-text-from-mars-news-.">Scrape Titles and Preview Text from Mars News .</h3>
+<ol type="1">
+<li><p>Use automated browsing to visit the Mars NASA news site Links to an external site.. Inspect the page to identify which elements to scrape.</p></li>
+<li><p>Create a Beautiful Soup object and use it to extract text elements from the website.</p></li>
+<li><p>Extract the titles and preview text of the news articles that you scraped. Store the scraping results in Python data structures as follows:</p>
+<ul>
+<li>Store each title-and-preview pair in a Python dictionary. And, give each dictionary two keys: title and preview. An example is the following:</li>
+</ul>
+<p>’’’</p>
+<pre><code> {'title': "Mars Rover Begins Mission!", 'preview': "NASA's Mars Rover begins a multiyear mission to collect data about the little-explored planet."}</code></pre>
+<p>’’’</p>
+<ul>
+<li><p>Store all the dictionaries in a Python list.</p></li>
+<li><p>Print the list in your notebook.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="export-data-to-json-or-mongodb" class="level3">
+<h3 class="anchored" data-anchor-id="export-data-to-json-or-mongodb">Export Data to JSON or MongoDB</h3>
+<ol start="4" type="1">
+<li>Store the scraped data in a JSON file or MongoDB database.</li>
+</ol>
+</section>
+</section>
+<section id="deliverable-2-scrape-and-analyze-mars-weather-data" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-2-scrape-and-analyze-mars-weather-data">Deliverable 2: Scrape and analyze Mars weather data</h2>
+<ol type="1">
+<li><p>Use automated browsing to visit the Mars Temperature Data Site Links to an external site. Inspect the page to identify which elements to scrape</p></li>
+<li><p>Create a Beautiful Soup object and use it to scrape the data in the HTML table. Note that this can also be achieved by using the Pandas read_html function. However, use Beautiful Soup here to continue sharpening your web scraping skills.</p></li>
+<li><p>Assemble the scraped data into a Pandas DataFrame. The columns should have the same headings as the table on the website. Here’s an explanation of the column headings:</p>
+<ul>
+<li>id: the identification number of a single transmission from the Curiosity rover</li>
+<li>terrestrial_date: the date on Earth</li>
+<li>sol: the number of elapsed sols (Martian days) since Curiosity landed on Mars</li>
+<li>ls: the solar longitude</li>
+<li>month: the Martian month</li>
+<li>min_temp: the minimum temperature, in Celsius, of a single Martian day (sol)</li>
+<li>pressure: The atmospheric pressure at Curiosity’s location</li>
+</ul></li>
+<li><p>Examine the data types that are currently associated with each column. If necessary, cast (or convert) the data to the appropriate datetime, int, or float data types.</p></li>
+<li><p>Analyze your dataset by using Pandas functions to answer the following questions:</p>
+<ul>
+<li>How many months exist on Mars?</li>
+<li>How many Martian (and not Earth) days worth of data exist in the scraped dataset?</li>
+<li>What are the coldest and the warmest months on Mars (at the location of Curiosity)? To answer this question:
+<ul>
+<li>Find the average the minimum daily temperature for all of the months.</li>
+<li>Plot the results as a bar chart.</li>
+</ul></li>
+<li>Which months have the lowest and the highest atmospheric pressure on Mars? To answer this question:
+<ul>
+<li>Find the average the daily atmospheric pressure of all the months.</li>
+<li>Plot the results as a bar chart.</li>
+</ul></li>
+<li>About how many terrestrial (Earth) days exist in a Martian year? To answer this question:
+<ul>
+<li>Consider how many days elapse on Earth in the time that Mars circles the Sun once.</li>
+<li>Visually estimate the result by plotting the daily minimum temperature.</li>
+</ul></li>
+</ul></li>
+<li><p>Export the DataFrame to a CSV file.</p></li>
+</ol>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
